@@ -1,159 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html>
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Ishareapp</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-  <meta name="author" content="anggiyastiputri" />
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/vendor/ayp/ayp.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+<title>me</title>
+<meta charset="UTF-8"/>
 </head>
 
+<style>
+h1,p,a {font-family: "Raleway", sans-serif; color:white}
+body {background-color:#212121; padding:15%;}
+</style>
+
 <body>
-
-  <main id="main">
-    <div id="card"> 
-        <!-- name card -->
-        <div class="front"> 
-            <div class="theme-ayp theme-main">
-                <div class="row-container">
-                    <div class="row no-padding middle-xs row-col">
-                        <div class="theme-ayp-card">
-                            <div class="row-container">
-                                <div class="row no-padding head">
-                                    <div class="info">
-                                        <h1>
-                                            <!-- title / your name -->
-                                            <span class="theme-element-title">
-                                                Ishareapp
-                                            </span>
-                                        </h1>
-                                        <h2 data-html="false">
-                                            <!-- content/ you can change content this  -->
-                                            <span class="theme-element-text theme-element-content" data-key="text_1">
-                                                <b>Freelance Web Developer</b>&nbsp;| dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                            </span>
-            
-                                        </h2>
-                                    </div>
-                                    <div class="img">
-                                        <span class="theme-element-img">
-                                            <span class="theme-element-img-inner">
-                                                <!-- photo profile , you can change in folder assets/img -->
-                                                <img alt="Ishareapp" src="assets/img/user.png">
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="row no-padding middle-xs row-col"></div>
-                                <div class="row no-padding bottom">
-                                    <div class="social">
-                                        <div class="theme-element-links">
-                                            <span class="theme-element-links-inner">
-                                                <!-- github  -->
-                                                <a class="tg-service-link" href="http://github.com/username">
-                                                    <i class="fa fa-github theme-element-social-btn github" onmouseover="this.style.background='#221e1b'" onmouseout="this.style.background='transparent'"></i> <span>GitHub</span>
-                                                </a>
-                                                <!-- medium -->
-                                                <a class="tg-service-link" href="http://medium.com/@username">
-                                                    <i class="fa fa-medium theme-element-social-btn" onmouseover="this.style.background='#000000'" onmouseout="this.style.background='transparent'"></i> <span>Medium</span>
-                                                </a>
-                                                <!-- product hunt -->
-                                                <a class="tg-service-link" href="http://producthunt.com/@username">
-                                                    <i class="fa fa-product-hunt theme-element-social-btn" onmouseover="this.style.background='#ea532a'" onmouseout="this.style.background='transparent'" style="background: transparent;"></i> <span>ProductHunt</span>
-                                                </a>
-                                                <!-- twitter -->
-                                                <a class="tg-service-link" href="http://twitter.com/username">
-                                                    <i class="fa fa-twitter theme-element-social-btn" onmouseover="this.style.background='#1da1f2'" onmouseout="this.style.background='transparent'"></i> <span>Twitter</span>
-                                                </a>
-                                                <!-- linkedid -->
-                                                <a class="tg-service-link" href="http://linkedin.com/in/username">
-                                                    <i class="fa fa-linkedin theme-element-social-btn" onmouseover="this.style.background='#0077b5'" onmouseout="this.style.background='transparent'"></i> <span>LinkedIn</span>
-                                                </a>
-                                                <!-- email -->
-                                                <a class="tg-service-link" href="javascript:void(0)">
-                                                    <i class="fa fa-envelope theme-element-social-btn" onmouseover="this.style.background='#0077b5'" onmouseout="this.style.background='transparent'" onclick="contactForm()"></i> <span>Email</span>
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <!-- end name card -->
-        <!-- contact form -->
-        <div class="back">
-            <div class="theme-ayp">
-                <div class="row-container">
-                    <div class="row no-padding middle-xs row-col">
-                        <div class="theme-ayp-card-back" style="display: none;" id="contact-form">
-                            <div class="row">
-                                <div class="col-md-11"></div>
-                                <div class="close-btn-wrapper" style="">
-                                    <button class="btn close-btn" onclick="nameCard()" style="display: none;">
-                                    <i class="fa fa-times"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="row-container">
-                                <div class="row no-padding head" style="padding-top: 30px;">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-8">
-                                        <!-- you can get or display message / data in /src/js/main.js file  -->
-                                        <form action="javascript:void(0)" id="form">
-                                            <!-- input email -->
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1" class="__label">Email</label>
-                                                <input type="email" name="email" class="form__control" id="exampleInputEmail1" required aria-describedby="emailHelp" autofocus>
-                                            </div>
-                                            <!-- input message -->
-                                            <div class="form-group">
-                                                <label for="exampleInputPassword1" class="__label">Message</label>
-                                                <textarea name="message" id="" cols="30" rows="4" class="form__control" required></textarea>
-                                            </div>
-                                            <button type="submit" class="btn submit-btn">Send</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <!-- end contact form -->
-    </div>
-  </main><!-- End #main -->
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/jquery/jquery.flip.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+<center>
+<h1>sgroi.ga<span style="font-weight:normal;">briel</span></h1>
+<a href="mailto:mail@sgroi.ga" style="text-decoration : none; color : white;">Contact</a>
 </body>
+
 
 </html>

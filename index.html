@@ -36,6 +36,25 @@
     </style>
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script>
+        function generateRandomEmail() {
+            var characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+            var domain = '@sgroi.ga';
+            var email = '';
+            for (var i = 0; i < 8; i++) {
+                email += characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+            return email + domain;
+        }
+
+        window.onload = function() {
+            var contactLink = document.getElementById('contactLink');
+            contactLink.addEventListener('click', function() {
+                var randomEmail = generateRandomEmail();
+                window.location.href = 'mailto:' + randomEmail;
+            });
+        };
+    </script>
 </head>
 <body>
     <center>
@@ -44,7 +63,7 @@
     <div id="links">
         <a href="https://sgroi.ga/about.html">about</a>
         <a href="https://medium.com/@sgroi">blog</a>
-        <a href="mailto:mail@sgroi.ga">contact</a>
+        <a id="contactLink" href="#">contact</a>
         <a href="https://twitter.com/sgroiga">follow</a>
     </div>
     </center>
